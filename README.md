@@ -62,7 +62,7 @@ export TOKEN_NAME=your token name
 
 export REGIONS="eu-west-1,eu-west-3"
 
-export SFX_AWS_ACCNT_ARN="arn:aws:iam::214014584948:root"
+export SFX_AWS_ACCNT_ARN="arn for your realm - see Splunk Docs"
 
 export ROLE_ARN=arn of your existing role
 
@@ -77,11 +77,11 @@ python3 0_login_script.py --email your_email@example.com --password your_passwor
 ```
 
 ```cmd
-python3 1_create_aws_integration_and_update_iam.py --email your_email@example.com --password your_password --orgId your_organization_id --realm your_realm --name "your_integraion_name" --namedToken "your_sfx_token_name" --regions "region-name-1" "region-name-2" --sfxAwsAccountArn "arn:aws:iam::214014584948:root" --aws_access_key_id your_aws_access_key_id --aws_secret_access_key your_aws_secret_access_key --roleArn "your_role_arn" --defaultExternalId "CHANGE_ME"
+python3 1_create_aws_integration_and_update_iam.py --email your_email@example.com --password your_password --orgId your_organization_id --realm your_realm --name "your_integraion_name" --namedToken "your_sfx_token_name" --regions "region-name-1" "region-name-2" --sfxAwsAccountArn "arn for your realm" --aws_access_key_id your_aws_access_key_id --aws_secret_access_key your_aws_secret_access_key --roleArn "your_role_arn" --defaultExternalId "CHANGE_ME"
 ```
 
 ```cmd
-python3 2_update_aws_integration.py --email your_email@example.com --password your_password --orgId your_organization_id --realm your_realm --name "API_Demo" --namedToken "your_sfx_token_name" --regions "eu-west-1" "eu-west-3" --sfxAwsAccountArn "arn:aws:iam::214014584948:root" --aws_access_key_id your_aws_access_key_id --aws_secret_access_key your_aws_secret_access_key --roleArn "your_role_arn"
+python3 2_update_aws_integration.py --email your_email@example.com --password your_password --orgId your_organization_id --realm your_realm --name "API_Demo" --namedToken "your_sfx_token_name" --regions "eu-west-1" "eu-west-3" --sfxAwsAccountArn "arn for your realm" --aws_access_key_id your_aws_access_key_id --aws_secret_access_key your_aws_secret_access_key --roleArn "your_role_arn"
 ```
 
 ```cmd
