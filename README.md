@@ -49,14 +49,23 @@ python3 3_reset.py
 The following env variables can be exported
 
 export O11Y_EMAIL=your e-mail
+
 export O11Y_PASSWORD=your password
+
 export O11Y_ORGID=your org id
+
 export O11Y_REALM=your realm
+
 export INTEGRATION_NAME=your integration name
+
 export TOKEN_NAME=your token name
+
 export REGIONS="eu-west-1,eu-west-3"
+
 export SFX_AWS_ACCNT_ARN="arn:aws:iam::214014584948:root"
+
 export ROLE_ARN=arn of your existing role
+
 export DEFAULT_EXTERNAL_ID=ID in your existing role e.g. CHANGE_ME
 
 ## Run Time Vars
